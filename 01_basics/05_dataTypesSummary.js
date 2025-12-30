@@ -39,3 +39,29 @@ const myFunction = function(){
 
 //  datatypes of all non-primitive functions are object
 // for functions datatype is function object
+
+
+// ++++++++++ STACK AND HEAP MEMORY +++++++++++++++++
+
+// Stack(Primitive), Heap(Non-primitive)
+
+
+// stack the original value will not change , a copy is send to use
+let myName = "Anupam"
+let anotherName = myName
+anotherName = "Raj"
+
+console.log(myName);
+console.log(anotherName);
+
+
+// Heap the original value is changed , here reference of the data is used
+let user1 = {
+    email: "Anupam@gmail.com",
+    upi: "user@slc",
+}
+let user2 = user1
+
+user2.email = "Raj@gmail.com"
+console.log(user1.email);
+console.log(user2.email);
