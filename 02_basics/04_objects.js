@@ -47,11 +47,38 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('name'));// true
-console.log(tinderUser.hasOwnProperty('age'));// false
+// console.log(tinderUser.hasOwnProperty('name'));// true
+// console.log(tinderUser.hasOwnProperty('age'));// false
+
+const course = {
+    coursename: "JavaScript",
+    price: 999,
+    courseInstructor: "Hitesh Choudhary"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: Ins} = course // object destructuring
+
+// console.log(courseInstructor);
+console.log(Ins);
+
+
+// ************JSON - JavaScript Object Notation************
+// {
+//     "name": "Anupam Mondal",
+//     "course": "JavaScript",
+//     "price": "free"
+// }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
